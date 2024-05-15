@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styl.css">
+    <!-- <link rel="stylesheet" href="bg_style.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="bubble-container">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <!-- Add more bubble elements as needed -->
+    </div>
+
+    <!-- header section -->
+
+    <header>
+        <nav>
+            <input type="checkbox" name="" id="sidebar-active">
+            <label for="sidebar-active" class="opn-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#5f6368">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg>
+
+            </label>
+
+            <div class="link-container">
+                <label for="sidebar-active" class="close-sidebar-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#5f6368">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg>
+                </label>
+
+                <a  href="#home" class="home-link">Home</a>
+                <a href="#About" >About</a>
+                <a href="#projects">Projects</a>
+                <a href="#Skills">Skills</a>
+                <a href="#Certification">Certification</a>
+                <a href="#Contact">Contact</a>
+                <div class="container-toggle">
+                    <input type="checkbox" id="check">
+                    <label for="check" class="button-toggle"></label>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- Home Section -->
+<div class="hom">
+    <div id="home" class="home">
+
+        <h1>Fareesa Masroor</h1>
+        <h3>INTERNATIONAL CODING INSTRUCTOR</h3>
+        <h4> @byjufutureschool</h4>
+
+        <div class="bg_of_img">
+            <img id="my_img" width="140vh" height="50vh" src="my_img.jpg" alt="Name_logo">
+            <div class="rect">
+            </div>
+        </div>
+
+        <div class="slideshow-container">
+            <div class="paragraph fade">
+                <p>Innovative, dedicated forward-thinking executive, offering over three years of success🙌. Expert in
+                    strategic and tactical planning for course curriculums📝, and design in various student
+                    projects👩‍💻,
+                    workshops, and internship programs. I am passionate about teaching and creating technology.⚙️</p>
+            </div>
+            <div class="paragraph fade">
+                <p>Driven by a relentless curiosity and a thirst for innovation👩‍💻, I'm eager to dive headfirst into
+                    the
+                    dynamic world of development. Whether it's crafting elegant solutions, collaborating with diverse
+                    teams,
+                    or embracing the latest technologies, I'm committed to making an impact wherever I go🥇</p>
+
+            </div>
+
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+ 
+</div>   
+
+<!-- <div class="hom1">
+<img src="./img/2.jpg" alt="">
+
+</div> -->
+</div>
+    <!-- About section -->
+
+    <h2 id="About" >About Me</h2>
+
+
+    <div  class="expand">
+
+        <div class="wrk">
+            <h4>Education</h4>
+            <p>B.E(Computer Science) 2019</p>
+            <p>CGPA-7.5</p>
+            <p>Vishveshvaraya Technology University</p>
+            <p>Gulbarga, Karnataka</p>
+        </div>
+        <div class="wrk">
+            <h4>Work</h4>
+            <p>Coding Instructor</p>
+            <p>For 2 years</p>
+            <p>Innovatum,Vijayapur</p>
+            <p>Karnataka</p>
+        </div>
+        <div class="wrk">
+            <h4>Work</h4>
+            <p>Coding Instructor</p>
+            <p>For 3 years</p>
+            <p>WhiteHat Jr,Byju's Future School</p>
+            <p>Remote</p>
+        </div>
+    </div>
+
+    <div style="text-align: center;">
+        <a id="icons" href="./resume.pdf" class="fa fa-download">
+            <p>Download Resume</p>
+        </a>
+    </div>
+    <h4 id="projects" style="font-size: 40px; text-align: center; margin-top: 5%;">Projects </h4>
+   
+    <div  class="about">
+        <div class="cards">
+            <img src="applogo1.png" alt="">
+
+            <div class="card-content">
+                <h4>E-LIBRARY APP </h4>
+                <p>
+                    <li>Online library with the transaction and search functionality.</li>
+                    <li> Database using Cloud Firestore database</li>
+                    <li>Queries to check Valid transactions </li>
+                    <li>Firestore Authentication to sign-in with email and password</li>
+                    <li> Material designs components for UI</li>
+                </p>
+
+            </div>
+          
+            <div class="img-holder">
+                <img src="https://reactnative.dev/img/header_logo.svg" alt="">
+                <img src="https://www.gstatic.com/devrel-devsite/prod/ve5ef9ac7b497e19ece9427facc78d0c59aaab7a2bc6a0f75fdae93f4ee589f67/firebase/images/lockup.svg"
+                    alt="">
+                <img src="https://miro.medium.com/v2/resize:fill:75:75/1*yUNfohs9jA6GCDmyCYJTvA@2x.png" alt=""
+                    srcset="">
+                <img src="https://snack.expo.dev/dist/assets/bc351fd24f9bd32bc131f122d42c1a77.svg" alt="" srcset="">
+            </div>
+            <button>read more</button>
+        </div>
+
+
+
+
+        <div class="cards">
+            <img src="applogo2.png"
+                alt="">
+
+            <div class="card-content">
+                <h4>Game Development - JS </h4>
+                <p>
+                    <li>FAPPY BIRD CLONE</li>
+                    <li>TREX RUNNER, MARIO, MINECRAFT CLONE 2d</li>
+                    <li>MULTIPLE PHYSICS ENGINE GAMES.</li>
+                    <li>single player, multiplayer, multiplayer online games with firestore db</li>
+                </p>
+
+            </div>
+            <div class="img-holder">
+                <img src="https://p5js.org/assets/img/p5js.svg" alt="">
+                <img src="https://brm.io/matter-js/docs/assets/img/matter-js.svg" alt="">
+                <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="">
+            </div>
+            <button>read more</button>
+        </div>
+
+        <div class="cards">
+
+            <img src="applogo3.png"
+                alt="">
+            <div class="card-content">
+                <h4>STORYTELLING APP </h4>
+                <p>
+                    <li> The app was built with expo[react-native]</li>
+                    <li>Using Googles firebase Realtime database</li>
+                    <li>Added Sign-in with Google [Authentication]</li>
+                    <li>Login and logout functionality, night and day mode</li>
+                    <li>Users can create posts[stories], read others posts</li>
+                    <li>like and dislike posts</li>
+                </p>
+
+            </div>
+
+            <div class="img-holder">
+                <img src="https://reactnative.dev/img/header_logo.svg" alt="">
+                <img src="https://www.gstatic.com/devrel-devsite/prod/ve5ef9ac7b497e19ece9427facc78d0c59aaab7a2bc6a0f75fdae93f4ee589f67/firebase/images/lockup.svg"
+                    alt="">
+                <img src="https://miro.medium.com/v2/resize:fill:75:75/1*yUNfohs9jA6GCDmyCYJTvA@2x.png" alt=""
+                    srcset="">
+                <img src="https://snack.expo.dev/dist/assets/bc351fd24f9bd32bc131f122d42c1a77.svg" alt="" srcset="">
+            </div>
+            <button>read more</button>
+        </div>
+
+    </div>
+
+
+    <!-- Skill Section -->
+    <h2 id="Skills" >My Skills</h2>
+    <div class="skills">
+    <p>HTML/CSS</p>
+    <div class="progress-container">
+        <div class="progress-bar1" id="myBar">80%</div>
+    </div>
+    <p>Javascript</p>
+    <div class="progress-container">
+        <div class="progress-bar2" id="myBar">70%</div>
+    </div>
+    <p>Data Structures and Algorithms</p>
+    <div class="progress-container">
+        <div class="progress-bar3" id="myBar">80%</div>
+    </div>
+    <p>React Native</p>
+    <div class="progress-container">
+        <div class="progress-bar4" id="myBar">50%</div>
+    </div>
+</div>
+
+    <!-- certification -->
+    <h2 id="Certification" >Certification</h2>
+
+    <div id="" class="certification">
+
+<div class="cert-card">
+    <h4>Byju's Future School</h4>
+    <img src="./img/cert4.png" alt="" srcset="">
+    <p>2000 Coding Classes completed at BFS, teaching more then 500 students from 7 different countries</p>
+    <button type="button">Download</button>
+    </div>
+
+<div class="cert-card">
+    <h4>Hackathon</h4>
+    <img src="./img/cert5.png" alt="" srcset="">
+    <p>Jury to Judge Students Performance</p>
+    <button type="button">Download</button>
+    </div>
+
+
+<div class="cert-card">
+    <h4>Game Design Fundamentals</h4>
+    <img src="./img/cert6.png" alt="" srcset="">
+    <p>Designed multiple 2d games with students at BFS</p>
+    <button type="button">Download</button>
+    </div>
+
+    <div class="cert-card">
+    <h4>Neural Network and Deep Learning</h4>
+    <img src="./img/cert1.jpeg" alt="" srcset="">
+    <p>Course that taught me about machine learning deep learning and neurl networks</p>
+    <button type="button">Download</button>
+</div>
+
+<div class="cert-card">
+    <h4>App Development</h4>
+    <img src="./img/cert7.png" alt="" srcset="">
+    <p>Awarded at BFS for teaching/developing apps with Rect Native</p>
+    <button type="button">Download</button>
+</div>
+
+
+
+
+</div>
+
+    <script>
+        document.getElementById('check').addEventListener('change', function () {
+            var image = document.getElementById('changeImage')
+            if (this.checked) {
+                document.body.style.backgroundColor = 'black';
+                document.body.style.color = 'white';
+                image.src = 'logo2.png'
+            } else {
+                document.body.style.backgroundColor = '#f0f0f0';
+                document.body.style.color = 'black';
+                image.src = 'logo.png'
+            }
+        });
+    </script>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("paragraph");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+    </script>
+
+  <h4 style="font-size: 40px; text-align: center; margin-top: 5%;">Connect </h4>
+    <div class="icon-holder">
+        <a id="icons" href="#" class="fa fa-facebook"></a>
+        <a id="icons" href="#" class="fa fa-twitter"></a>
+        <a id="icons" href="#" class="fa fa-linkedin"></a>
+        <a id="icons" href="#" class="fa fa-instagram"></a>
+        
+    </div>
+
+    
+
+<section id="Contact" class="contact-section">
+  <h2 class="contact-heading">Get in Touch</h2>
+  <form id="contact-form" action="#" method="post">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+    </div>
+    <div class="form-group">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<footer>
+    <div class="footer-content">
+      <div class="contact-info">
+        <h3>Contact Me</h3>
+        <p>123 Street Name</p>
+        <p>Karnataka, India</p>
+        <p>Phone: +1234567890</p>
+        <p>Email: fareesamas@gmail.com</p>
+      </div>
+      <div class="contact-buttons">
+        <a href="tel:+1234567890" class="call-button">Call Us</a>
+        <a href="mailto:info@example.com" class="email-button">Email Us</a>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+</html>
