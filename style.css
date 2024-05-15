@@ -1,0 +1,150 @@
+/* basic settings */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root{
+    --color-wht:#FBFBFF;
+    --color-red:#FF331F;
+    --color-blu1:#657ED4;
+    --color-blu2:#3626A7;
+    --color-blk:#0D0106;
+}
+
+*{
+    margin-top: 0;
+    padding: 0;
+    /* background-color: aliceblue; */
+}
+
+body{
+    background-color: var(--color-wht)
+}
+
+html{
+    font-size: 12pt;
+    font-family: "PT Sans", sans-serif;
+}
+
+/* toggle button */
+.container-toggle{
+    display: flex;
+}
+
+.button-toggle{
+     background-color: rgb(215, 202, 183);
+     width: 30px;
+     height: 16px;
+     border-radius: 20px;
+     cursor: pointer;
+     position: relative;
+}
+
+.button-toggle::before{
+    position: absolute;
+    content: '';
+    background-color: rgb(255, 255, 255);
+    width: 12px;
+    height: 12px;
+    border-radius: 20px;
+    margin: 1.5px;
+    transition: 0.1s;
+}
+
+input:checked + .button-toggle::before{
+   background-color: rgb(134, 57, 57);
+   color: white;
+}
+
+
+input:checked + .button-toggle{
+    background-color: rgb(255, 255, 255);
+}
+
+input:checked + .button-toggle::before{
+    transform: translateX(15px);
+    background-color: rgb(97, 89, 89);
+}
+
+input{
+    /* display: none; */
+}
+
+
+/* navbar */
+nav{
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--color-blk);
+    color: var(--color-wht);
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+nav li{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    font-weight: bold;
+    height: 100%;
+    color: var(--color-wht);
+}
+
+nav li:hover{
+    /* text-shadow:  0px 0px 1px rgb(97, 94, 100); */
+    background-color:var(--color-blu2);
+    color: #F4F0BB;
+}
+
+nav svg{
+    fill: var(--color-wht);
+}
+
+#check{
+    display: none;
+}
+
+.opn-sidebar-button, .close-sidebar-button{
+    padding: 0 20px;
+    display: none;
+}
+
+nav .home-link{
+    margin-right: auto ;
+}
+
+@media(max-width:450px) {
+    .links-container{
+        /* display: none; */
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 0%;
+        right: 0%;
+        z-index: 10;
+        width: 200px;
+        background-color: var(--color-blk);
+        box-shadow: -5px 0 5px --color-blu2;
+    }
+    nav li{
+        box-sizing: border-box;
+        height: auto; 
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start;
+    }
+    .opn-sidebar-button, .close-sidebar-button{
+        display: block;
+    }
+    #sidebar-active:checked ~ .links-container{
+        display: flex;
+    }
+
+}
