@@ -2,7 +2,7 @@
 
 Welcome to my responsive portfolio! This project showcases my work and skills through a responsive web design that adapts to various screen sizes and devices.
 
-![Portfolio Screenshot](https://via.placeholder.com/800x400.png?text=Portfolio+Screenshot)
+![Portfolio Screenshot](https://github.com/Fareesa-Masroor/Responsive-Portfolio-Project/blob/main/img/Screenshot%20(97).png)
 
 ## About the Project
 
@@ -24,4 +24,7 @@ This portfolio is designed to be fully responsive. The goal is to provide a prof
 
 more images 
 
-![Portfolio Screenshot](https://via.placeholder.com/800x400.png?text=Portfolio+Screenshot)
+![Portfolio Screenshot](https://github.com/Fareesa-Masroor/Responsive-Portfolio-Project/blob/main/img/Screenshot%20(98).png)
+![Portfolio Screenshot](https://github.com/Fareesa-Masroor/Responsive-Portfolio-Project/blob/main/img/Screenshot%20(99).png)
+
+
